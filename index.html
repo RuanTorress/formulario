@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu Carro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<section id=" contato" class="Formulario">
+    <div class="container">
+        <div class="header">
+               <h3> Cadastre seu veiculo para vender mais rapido </h3>
+               
+           </div>
+   
+           <div class="from-container">
+               <div class="form-header">
+                   <p class="title">Formulario</p>
+                   <div class="form-body">
+                       <h1 class="form-title">
+                           Venda facil seu carro!
+                       </h1>
+                       <p>Descreva as caracteristicas e marque os opcionais que ele possui
+                       </p>
+                       
+                       <form>
+                           <div class="box-input">
+                               <label for="title"> Titulo do anucio <span class="required-field">*</span></label>
+                               <input 
+                               type="text" 
+                               name="title" 
+                               id="title" 
+                               class="block" 
+                               placeholder=" um titulo para anuciar seu carro" 
+                               minlength="1"
+                               maxlength="30"
+                               required >
+                           </div>
+   
+                           <div class="box-input">
+                               <label for="price"> Preço <span class="required-field">*</span></label>
+                               <input 
+                               type="number" 
+                               name="price" 
+                               id="price" 
+                               class="block" 
+                               placeholder=" Defina o Preço" 
+                               required >
+                           </div>
+   
+                           <div class="box-input">
+                               <label for="description"
+                               > Descrição <span class="required-field">*</span></label>
+                           
+                               <textarea name="description"
+                                id="description"
+                               class="block"
+                               placeholder="aqui voce colocar os detalhes do veiculo" 
+                               ></textarea>
+                           </div>
+   
+                           <div class="box-input">
+                               <label for="brand"> Marca <span class="required-field">*</span></label>
+                               <input 
+                               type="text" 
+                               name="brand" 
+                               id="brand" 
+                               class="block" 
+                               placeholder=" digite a marca do carro" 
+                               required >
+                           </div>
+                           <div class="box-input">
+                               <label for="model"> Modelo <span class="required-field">*</span></label>
+                               <input 
+                               type="text" 
+                               name="model" 
+                               id="model" 
+                               class="block" 
+                               placeholder=" digite a modelo do carro" 
+                               required >
+                           </div>
+   
+                           <div class="box-input">
+                               <label for="mileage"
+                               > Kilometragen <span class="required-field">*</span></
+                               >
+                               <input 
+                               type="number" 
+                               name="mileage" 
+                               id="mileage" 
+                               class="block" 
+                               placeholder=" digite a Kilometragen do carro" 
+                               required >
+                           </div>
+   
+                           <div class="box-input">
+                               <label for="purchase_date"
+                               > data da compra <span class="required-field">*</span></
+                               >
+                               <input 
+                               type="date" 
+                               name="purchase_date" 
+                               id="purchase_date" 
+                               class="block" 
+                      
+                               required >
+                           </div>
+   
+                           <div class="box-input">
+                               <p> Tipo de Cambio: <span class="required-field">*</span></p>
+                       
+                               <input type="radio" id=" manual" name="gear" >
+                               <label for="manual">manual</label>
+                               <input type="radio" id=" auto" name="gear" >
+                               <label for="auto">automatico</label>
+                           </div>
+   
+                           
+                           <div class="optional-box">
+                               <p> Opcionais </p>
+                       
+                            <ul class="optional-list">
+                                   <li>
+                                       <input type="checkbox"
+                                       id="airbag"
+                                       name="optional[]"
+                                       value="airbag" 
+                                       />
+                                       <label for="airbag">airbag</label>
+                                   </li>
+   
+                                   <li>
+                                       <input type="checkbox"
+                                       id="alarm"
+                                       name="optional[]"
+                                       value="alarm" 
+                                       />
+                                       <label for="alarm">alarm</label>
+                                   </li>
+   
+                                   <li>
+                                       <input type="checkbox"
+                                       id="ac"
+                                       name="optional[]"
+                                       value="ac" 
+                                       />
+                                       <label for="ac">ar codicionado </label>
+                                   </li>
+   
+                                   <li>
+                                       <input type="checkbox"
+                                       id="reverse_camera"
+                                       name="optional[]"
+                                       value="reverse_camera" 
+                                       />
+                                       <label for="reverse_camera">camera de ré</label>
+                                   </li>
+   
+                            </ul>
+                           </div>
+   
+                           <div class="optional-box">
+                              
+                       
+                            <ul class="optional-list">
+                                   <li>
+                                       <input type="checkbox"
+                                       id="lane_assist"
+                                       name="optional[]"
+                                       value="lane_assist" 
+                                       />
+                                       <label for="lane_assist">assistente de Pista</label>
+                                   </li>
+   
+                                   <li>
+                                       <input type="checkbox"
+                                       id="keyless"
+                                       name="optional[]"
+                                       value="keyless" 
+                                       />
+                                       <label for="keyless">Partida keyless</label>
+                                   </li>
+   
+                                   <li>
+                                       <input type="checkbox"
+                                       id="smartphone"
+                                       name="optional[]"
+                                       value="smartphone" 
+                                       />
+                                       <label for="smartphone">Intergração com Celular </label>
+                                   </li>
+   
+                                   <li>
+                                       <input type="checkbox"
+                                       id="leather_seat"
+                                       name="optional[]"
+                                       value="leather_seat" 
+                                       />
+                                       <label for="leather_seat">Banco de couro</label>
+                                   </li>
+   
+                            </ul>
+                           </div>
+                           <div class="box-input">
+                               <p>Fotos do Carro <span class="required-field">*</span></p>
+                               <input type="file" multiple accept=" image/png, image/jpg"
+                               id="images"
+                               name="images"
+                               required
+                               />
+                           </div>
+   
+                           <input type="submit" value="enviar " class="btn-submit" />
+                           
+                       </form>
+               </div>
+           </div>
+           </div>
+       </div> </section>
+   
+    
+
+</body>
+</html>
